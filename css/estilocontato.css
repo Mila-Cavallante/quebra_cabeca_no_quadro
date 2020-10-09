@@ -1,0 +1,38 @@
+/*Estilo da página de contato*/
+form{
+    background-color: #f2b988;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;   
+}
+
+input, textarea {
+    margin: 3px;
+    font: 1em sans-serif;
+    width: 350px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Harmoniza o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.button{
+    display: inline-block;
+}

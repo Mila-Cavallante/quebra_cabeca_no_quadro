@@ -1,0 +1,145 @@
+/*Folha de CSS da página INDEX*/
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #FFDEAD;
+}
+
+h1{
+    font-family: 'Sansita Swashed', cursive; 
+    text-align: center;
+}
+
+h2{
+    font-family: 'Sansita Swashed', cursive; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-indent: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.menu{
+    background: black;/*FUNDO DO MENU*/
+}
+
+.menu .menu-list, .menu .sub-menu{ /*Remove os marcadores (bolinhas) da lista*/
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /*Deixa os links espaçados igualmente*/
+    
+}
+
+.menu a{ /*Configura todos os links do menu*/
+    color: white;
+    background: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700px;
+    letter-spacing: 0.2 em;
+}
+
+.menu>.menu-list>li{ /*Faz com que os elementos da lista fiquem na horizontal*/
+    float: left;
+    position: relative;    
+}
+
+.menu>.menu-list>li>a{ /*Configura os links do menu principal*/
+    padding: 15px;
+    margin: 05px;
+    background: black;
+    
+}
+
+.menu >.menu-list >li:hover a{ /*Configura o fundo do menu principal quando com mouse passar por cima, hover*/
+    background: #222020;
+    text-decoration: underline;
+
+}
+
+.menu >.menu-list >li:hover >.sub-menu{ /*Mostra o submenu no evento de mouse houver*/
+    display: block;  
+    
+}
+.menu > .menu-list > li > .sub-menu> li>a{ /*Tira o sublinhado do sub-menu*/
+    text-decoration: none;
+}
+.menu > .menu-list > li > .sub-menu> li:hover a{ /*Quando passar o mouse aparece o sublinhado do sub-menu*/
+    text-decoration: underline;
+}
+
+.menu > .menu-list > li > .sub-menu{ /*Configura o estilo do sub-menu */
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: #0000CD;
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+    text-decoration: none;
+}
+
+.menu >.menu-list >li > .sub-menu >li >a{ /*Configura os links do sub-menu*/
+    padding: 10px 20px;
+} 
+.menu:after{
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#perfil{ /*Foto de perfil*/
+    border-radius: 50%;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+}
+
+footer>p{ /*Configuração do footer*/ 
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    
+}
+
+figcaption{ /*Configuração das legendas das imagens*/
+    font-size: 16px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+#textofoto{ /*Configuração do texto principal*/
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*Tentei fazer o responsivo. Até que funcionou mas achei que não se encaixou nas proporções. Foi interessante apender sobre. 
+@media screen and (max-width:767px){ 
+    p{
+        font-size: 14px;
+    }
+    
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    .menu a{
+        font-size: 22px;
+}*/ 

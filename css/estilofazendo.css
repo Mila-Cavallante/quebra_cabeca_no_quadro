@@ -1,0 +1,26 @@
+/*Estilo da página COMO FAZER*/
+#puzzle{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+#cano{ /*configuração da imagem*/ 
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+.preparo{ /*configuração da imagem*/ 
+    display: flex;
+    justify-content: space-around;/*Deixa os links espaçados igualmente*/
+}
+
+img{ /*configuração da imagem*/ 
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}

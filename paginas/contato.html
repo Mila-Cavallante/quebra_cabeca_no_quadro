@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> Quebra-cabeça no quadro </title>
+        <link rel="stylesheet" type="text/css" href="../css/estiloindex.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilocontato.css"/>
+    </head>
+    <body>
+        <script>
+        function envio(){
+            alert("Mensagem enviada com sucesso!");
+        }
+        </script>
+        <header>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li> <a href="index.html" > INICIAL </a></li>
+                    <li> <a href="#" > MEU HOBBY </a>
+                        <ul class="sub-menu">
+                            <li> <a href="hobby.html" > QUEBRA-CABEÇA </a></li>
+                            <li> <a href="fazendo.html" > COMO FAZER </a></li>
+                        </ul>
+                    </li>    	
+                    <li> <a href="contato.html" > CONTATO </a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>    
+        <p>Se você ficou com alguma dúvida, tem alguma dica ou quer que eu monte o seu quebra-cabeça e te entregue emoldurado, deixe seu contato e uma mensagem para conversarmos sobre. Será um prazer!</p>
+        <p>Pode deixar seu e-mail ou telefone.</p>        
+        <form>
+            <div>
+                <label for="nome"> Nome: </label>
+                <input type="text" required id="nome"/> 
+            </div>
+             <div>
+                <label class="mail"> E-mail: </label> 
+                <input type="email" id="mail" placeholder="nome@email.com"/> 
+            </div>                
+            <div>
+                <label class="telefone">Telefone: </label>
+                <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" pattner="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/>
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea required id="msg"></textarea>
+            </div>
+            <center><div class="button">
+                <button onclick="envio()" type="submit">Enviar</button>
+            </div>  
+            <div class="button">   
+                <button type="reset">Limpar</button>
+            </div></center>
+        </form>
+        <br><br><br><br><br><br>
+        <footer>
+            <hr size=2 widht=100% color=black>
+            <p>E-mail: camila.cavallante@gmail.com</p>
+            <p>Produzido por Camila Cavallante. Ano 2020. </p>
+        </footer>
+    </body>
+</html>
